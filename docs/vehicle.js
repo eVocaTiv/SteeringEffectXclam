@@ -26,8 +26,8 @@ Vehicle.prototype.behaviors = function() {
     var mouse = createVector(mouseX, mouseY); // uses position of mouse.
     var flee = this.flee(mouse);
     
-    flee.mult(1.8);
-    arrive.mult(2);
+    flee.mult(4.5);
+    arrive.mult(0.5);
     
     this.applyForce(arrive);
     this.applyForce(flee);
